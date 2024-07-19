@@ -6,6 +6,8 @@ import { navbar, sidebar } from './configs/index.js'
 
 export default defineUserConfig({
 
+  base: "/notes/",
+
   lang: 'zh-CN',
 
   title: '丶看客',
