@@ -2,7 +2,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 
-import { navbar, sidebar } from './configs/index.js'
+import { navbar, sidebar, head } from './configs/index.js'
 
 export default defineUserConfig({
 
@@ -12,6 +12,8 @@ export default defineUserConfig({
 
   title: 'NOTE',
   description: '一些个人笔记',
+
+  head,
 
   theme: defaultTheme({
 
