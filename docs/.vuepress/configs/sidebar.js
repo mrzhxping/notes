@@ -1,43 +1,57 @@
 export const sidebar = {
-    "/web/": [
+    "/code/": [
       {
-        text: "Web",
+        text: "Git",
         collapsible: true,
+        // link: '/code/vue/', // link与 collapsible、prefix互斥
         children: [
-          {
-            text: "Vue",
-            collapsible: true,
-            children: [
-              "/web/vue/v1.md",
-              "/web/vue/v2.md"
-            ]
-          }
+          "/code/git/github-account.md",
         ]
-      }
-    ],
-    "/serve/": [
+      },
       {
-        text: "Serve",
+        text: "Vue",
         collapsible: true,
+        // link: '/code/vue/', // link与 collapsible、prefix互斥
         children: [
-          {
-            text: "Git",
-            collapsible: true,
-            children: [
-              "/serve/git/github-account.md",
-            ]
-          }
+          "/code/vue/v1.md",
+          "/code/vue/v2.md"
         ]
-      }
-    ],
-    "/life/": [
+      },
+      {
+        text: "React",
+        collapsible: true,
+        // link: '/code/react/', // link与 collapsible、prefix互斥
+        prefix: 'react/',
+        children: [
+          "r1.md",
+          "r2.md"
+        ]
+      },
       {
         text: "Mac",
         collapsible: true,
+        // link: '/code/react/', // link与 collapsible、prefix互斥
+        prefix: 'mac/',
         children: [
-          "/life/mac/brew.md",
-          "/life/mac/shell.md"
+          "brew.md",
+          "shell.md"
         ]
       },
+    ],
+    "/life/": [
+      {
+        text: "文章",
+        collapsible: true,
+        children: [
+          '/life/docs/d1.md',
+        ]
+      },
+      {
+        text: "游戏",
+        collapsible: true,
+        children: [
+          '/life/game/g1.md',
+        ]
+      }
     ]
   }

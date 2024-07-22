@@ -10,7 +10,7 @@ export default defineUserConfig({
 
   lang: 'zh-CN',
 
-  title: '丶看客',
+  title: 'NOTE',
   description: '一些个人笔记',
 
   theme: defaultTheme({

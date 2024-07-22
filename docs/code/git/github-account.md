@@ -1,3 +1,7 @@
+---
+title: Mac管理多个Github账户
+---
+
 # Mac管理多个Github账户
 
 ## SSH模式
@@ -24,7 +28,9 @@ ssh-keygen -t rsa -f id_rsa
 ```shell
 vi ~/.ssh/config
 ```
-将下面的配置根据自己生成的秘钥 配置到`config`文件中
+
+将下面的配置根据自己生成的秘钥 配置到`config`
+
 ```shell
 # 代理名称 随便起 不要设置成能正常访问的域名就行
 Host githubhost
@@ -43,21 +49,21 @@ IdentityFile ~/.ssh/id_rsa_githubm
 - `IdentityFile` 私钥位置 刚才生成的秘钥 刚才生成的叫什么名就填什么
 - `ProxyCommand` 代理 按需设置 建议配
   - `nc` 代理方式  其他：`Ncat`
-  - `-v` 展示链接详细信息 建议保留  
+  - `-v` 展示链接详细信息 建议保留
   - `-x` 代理地址 `-x proxy_address:proxy_port`
-  - `-X` 代理协议 proxy_protocol
+  - `-X` 代理协议 proxy_protocol  --默认 `5`
     - `4`：Socks v4
-    - `5`：socks v5  --默认 `5`
-    - `connect`：HTTPS proxy  
-  - `%h` 替换远程主机地址  
-  - `%p` 替换远程主机端口  
+    - `5`：socks v5
+    - `connect`：HTTPS proxy
+  - `%h` 替换远程主机地址
+  - `%p` 替换远程主机端口
 
 ### 三、配置公钥到对应的github账号中
 
 设置位置: `Settings -> SSH and GPG keys -> New SSH Key`  
 将生成的`秘钥.pub`文件中的内容复制到里面 保存就好了
 
-![github-sshkey.png](github-sshkey.png)  
+![github-sshkey.png](github-sshkey.png)
 
 ### 四、测试配置是否正确
 
@@ -72,8 +78,8 @@ ssh -T git@githubhost
 
 ### 五、clone项目
 
-1. 复制`SSH`方式clone链接  
-2. 将`@`后面的`github.com`替换为刚才在`config`文件中配置的 `Host`的值，然后`git clone`即可  
+1. 复制`SSH`方式clone链接
+2. 将`@`后面的`github.com`替换为刚才在`config`文件中配置的 `Host`的值，然后`git clone`即可
 
 ```shell
 github.com --替换为---> githubhost

@@ -2,8 +2,6 @@
 title: Brew
 ---
 
-
-
 —— Mac "上的应用商店"，包管理器；  安装、管理包很方便
 
 官网：<https://brew.sh>
