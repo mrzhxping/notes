@@ -28,7 +28,14 @@ npm init vuepress pjname
 - 顶部导航菜单 `docs/.vuepress/configs/navbar.js`  
 - 左侧导航菜单 `docs/.vuepress/configs/navbar.js`
 
+### 部署
+
+1. 1
+2. 2
+
 ### 参考文档
 
 - VuePress官网： <https://vuepress.vuejs.org/>
 - VuePres默认主题文档：<https://ecosystem.vuejs.press/>
+
+
