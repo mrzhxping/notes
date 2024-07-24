@@ -47,6 +47,11 @@ jobs:
           # 这是文档部署到的分支名称
           branch: gh-pages
           folder: docs/.vuepress/dist
+          # # 仓库范围的访问令牌，可以将个人令牌的值存储在GitHub Secrets中
+          # # 默认情况是不需要填的，如果您需要更多权限，例如部署到另一个存储库才需要填写
           # secrets.ACCESS_TOKEN 要与配置仓库 `Security`步骤里的设置的 secret name 一致，比如前面 name 设置为 ci_token ，那这里就要改为 ${{ secrets.ci_token }}
           # 此选项默认为存储库范围的GitHub令牌
-          # token: ${{ secrets.ACCESS_TOKEN }}
+          # TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          # # 部署到GitHub的不同仓库 <用户名>/<仓库名>
+          # # 此选项必须配置了TOKEN才能正常执行
+          # REPOSITORY-NAME: leoleor/leo2

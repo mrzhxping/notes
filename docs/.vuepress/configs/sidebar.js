@@ -6,6 +6,7 @@ export const sidebar = {
         // link: '/code/vue/', // link与 collapsible、prefix互斥
         children: [
           "/code/git/github-account.md",
+          "/code/git/operations.md",
         ]
       },
       {

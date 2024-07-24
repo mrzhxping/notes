@@ -10,6 +10,7 @@ footer: MIT Licensed | Copyright © 2024 - Mr.zhxping
 - [Git](./code/git/)
 
   - [Mac管理多个GitHub账户](./code/git/github-account.md)
+  - [一些Git常用操作](./code/git/operations.md)
 
 - [Vue](./code/vue/)
 
